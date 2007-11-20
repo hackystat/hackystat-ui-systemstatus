@@ -16,7 +16,7 @@
           <include name="org/hackystat/systemstatus/pingmail/**"/>
        </fileset>
      </copy>
-     <unjar src="${env.HACKYSTAT_SENSORBASE_HOME}/sensorbase.jar" dest="${tmp.dir}"/>
+     <unjar src="${env.HACKYSTAT_SENSORBASE_HOME}/sensorbaseclient.jar" dest="${tmp.dir}"/>
    
      <jar destfile="${basedir}/pingmail.jar" basedir="${tmp.dir}">
        <manifest>
