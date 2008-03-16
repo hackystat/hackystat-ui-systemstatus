@@ -1,4 +1,4 @@
-<project name="hudson" default="hudson.basic">
+<project name="hudson.systemstatus" default="hudson.basic">
   <description>
     Runs junit, pmd, checkstyle, findbugs, and javadoc, failing the build if problems found.
     Invocation: ant -f verify.build.xml
@@ -20,6 +20,7 @@
   <import file="emma.build.xml"/>
   <import file="dist.build.xml"/>
   <import file="jar.build.xml"/>
+  <import file="javancss.build.xml"/>
   
       
   <target name="hudson.basic" 
