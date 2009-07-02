@@ -22,15 +22,14 @@
   <import file="jar.build.xml"/>
   <import file="javancss.build.xml"/>
   
-      
   <target name="hudson.basic" 
-    depends="clean, compile, checkstyle.tool,  junit.tool, findbugs.tool, pmd.tool, jar, dist" 
+    depends="clean, compile, checkstyle.tool, junit.tool, findbugs.tool, pmd.tool" 
     description="Fast build for production purposes. No sensors.">
       <fail message="FindBugs reported warnings." if="findbugs.warningsfound"/>
   </target>
   
   <target name="hudson.daily.build" 
-      depends="clean, compile, checkstyle.tool, junit.tool, findbugs.tool, pmd.tool, jar" 
+      depends="clean, compile, checkstyle.tool, junit.tool, findbugs.tool, pmd.tool" 
       description="Builds and runs all QA stuff in preparation for sending sensor data.">
    </target>
   
