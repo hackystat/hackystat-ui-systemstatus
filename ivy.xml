@@ -1,8 +1,9 @@
 <ivy-module version="2.0">
-  <info organisation="org.hackystat" module="hackystat-sensor-shell"/>
+  <info organisation="org.hackystat" module="hackystat-ui-systemstatus"/>
   <publications>
-    <artifact name="sensorshell" />
-    <artifact name="shellperfeval" />
+    <artifact name="pingmail" />
+    <artifact name="hackystat-ui-systemstatus-javadoc" type="javadoc" ext="zip" />
+    <artifact name="hackystat-ui-systemstatus-source" type="source" ext="zip" />
   </publications>
   <dependencies>
     <dependency org="org.junit" name="junit" rev="${junit.version}" />

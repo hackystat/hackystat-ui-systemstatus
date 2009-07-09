@@ -3,17 +3,10 @@
 	<classpathentry kind="src" path="src"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.junit.JUNIT_CONTAINER/4"/>
-	<classpathentry kind="var" path="HACKYSTAT_UTILITIES_HOME/stacktrace.lib.jar"/>
-	<classpathentry kind="var" path="HACKYSTAT_SENSORBASE_HOME/sensorbase.lib.jar"/>
-	<classpathentry kind="var" path="RESTLET_HOME/lib/com.noelios.restlet.jar"/>
-	<classpathentry kind="var" path="RESTLET_HOME/lib/org.restlet.jar"/>
-	<classpathentry kind="var" path="RESTLET_HOME/lib/com.noelios.restlet.ext.net.jar"/>
-	<classpathentry kind="var" path="RESTLET_HOME/lib/com.noelios.restlet.ext.simple_3.1.jar"/>
-	<classpathentry kind="var" path="RESTLET_HOME/lib/org.simpleframework_3.1/org.simpleframework.jar"/>
-	<classpathentry kind="var" path="DERBY_HOME/lib/derby.jar"/>
-	<classpathentry kind="var" path="JAVAMAIL_HOME/mail.jar"/>
-	<classpathentry kind="var" path="HACKYSTAT_UTILITIES_HOME/tstamp.lib.jar"/>
-	<classpathentry kind="var" path="HACKYSTAT_UTILITIES_HOME/uricache.lib.jar"/>
-	<classpathentry kind="var" path="HACKYSTAT_UTILITIES_HOME/hackystatlogger.lib.jar"/>
+	<classpathentry kind="lib" path="lib/hackystat-sensorbase-uh/sensorbaseclient.jar" sourcepath="lib/hackystat-sensorbase-uh/hackystat-sensorbase-uh-source.zip">
+		<attributes>
+			<attribute name="javadoc_location" value="jar:platform:/resource/hackystat-ui-systemstatus/lib/hackystat-sensorbase-uh/hackystat-sensorbase-uh-javadoc.zip!/"/>
+		</attributes>
+	</classpathentry>
 	<classpathentry kind="output" path="bin"/>
 </classpath>

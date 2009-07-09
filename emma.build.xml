@@ -44,7 +44,6 @@
       <classpath path="${build.dir}/classes">
         <path refid="emma.lib.dir" />
         <path refid="compile.classpath" />
-        <path refid="hackystat-sensorbase-uh.path"/>
       </classpath>
       <sysproperty key="user.dir" value="${basedir}" />
       <sysproperty key="emma.coverage.out.file" value="${build.dir}/emma/coverage.emma" />
