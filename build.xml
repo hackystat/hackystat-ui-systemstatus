@@ -10,7 +10,7 @@
     <path id="junit.path" location="${lib.dir}/junit/junit.jar" />
 
     <ivy:retrieve organisation="org.hackystat" module="hackystat-sensorbase-uh" revision="latest.integration" pattern="${lib.dir}/hackystat-sensorbase-uh/[artifact].[ext]" sync="true" inline="true" conf="default" log="download-only" transitive="false" type="jar, javadoc, source" />
-    <path id="hackystat-sensorbase-uh.path" location="${lib.dir}/hackystat-sensorbase-uh/sensorbaseclient.jar" />
+    <path id="hackystat-sensorbase-uh.path" location="${lib.dir}/hackystat-sensorbase-uh/sensorbase.jar" />
   </target>
 
   <!-- Basic properties for this system. -->
@@ -22,7 +22,7 @@
     <path refid="junit.path" />
   </path>
 
-  <target name="compile" depends="install-libraries" description="Compiles the code.">
+  <target name="compile" depends="install-ivy, install-libraries" description="Compiles the code.">
     <!-- Now compile the code into build/classes -->
     <mkdir dir="${build.dir}/classes" />
     <javac srcdir="${src.dir}" destdir="${build.dir}/classes" source="1.5" target="1.5" debug="on" includeAntRuntime="no">

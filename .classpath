@@ -3,10 +3,6 @@
 	<classpathentry kind="src" path="src"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.junit.JUNIT_CONTAINER/4"/>
-	<classpathentry kind="lib" path="lib/hackystat-sensorbase-uh/sensorbaseclient.jar" sourcepath="lib/hackystat-sensorbase-uh/hackystat-sensorbase-uh-source.zip">
-		<attributes>
-			<attribute name="javadoc_location" value="jar:platform:/resource/hackystat-ui-systemstatus/lib/hackystat-sensorbase-uh/hackystat-sensorbase-uh-javadoc.zip!/"/>
-		</attributes>
-	</classpathentry>
+	<classpathentry kind="lib" path="lib/hackystat-sensorbase-uh/sensorbase.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
